@@ -9,6 +9,13 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f2f5fd;
 }
+#root {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /*.cards {
   width: 1200px;
   margin: 0 auto;
@@ -18,10 +25,15 @@ body {
 .card {
   width: 200px;
   height: auto;
+  margin: 5px;
   padding: 15px;
   background-color: #fff;
   border: 1px solid #e7e7e7;
   border-radius: 4px;
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.04);
 }
 .card__img {
   width: 100px;
