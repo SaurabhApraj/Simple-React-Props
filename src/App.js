@@ -3,14 +3,7 @@ import Samsung from "./Samsung";
 import Motorola from "./Motorola";
 
 const favmobile = "samsung";
-const FavMob = () => {
-  if (favmobile === "samsung") {
-    return <Samsung />;
-  } else {
-    return <Motorola />;
-  }
-};
 
-const App = () => <FavMob />;
+const App = () => <>{favmobile === "samsung" ? <Samsung /> : <Motorola />}</>;
 
 export default App;
