@@ -1,21 +1,16 @@
 import React from "react";
-import Card from "./Cards";
-import Sdata from "./Sdata";
+import Samsung from "./Samsung";
+import Motorola from "./Motorola";
 
-const App = () => (
-  <>
-    {Sdata.map((val) => {
-      return (
-        <Card
-          key={val.id}
-          imgsrc={val.imgsrc}
-          title={val.title}
-          price={val.price}
-          link={val.link}
-        />
-      );
-    })}
-  </>
-);
+const favmobile = "samsung";
+const FavMob = () => {
+  if (favmobile === "samsung") {
+    return <Samsung />;
+  } else {
+    return <Motorola />;
+  }
+};
+
+const App = () => <FavMob />;
 
 export default App;
